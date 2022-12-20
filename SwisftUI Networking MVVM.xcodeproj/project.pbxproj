@@ -11,6 +11,15 @@
 		29179CCE29508A8E00836185 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29179CCD29508A8E00836185 /* ContentView.swift */; };
 		29179CD029508A8F00836185 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29179CCF29508A8F00836185 /* Assets.xcassets */; };
 		29179CD329508A8F00836185 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29179CD229508A8F00836185 /* Preview Assets.xcassets */; };
+		29179CED29512EB400836185 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29179CEC29512EB400836185 /* Model.swift */; };
+		29179CEF29512F9C00836185 /* ProductEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29179CEE29512F9C00836185 /* ProductEndpoint.swift */; };
+		29179CF12951305700836185 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29179CF02951305700836185 /* APIError.swift */; };
+		29179CF3295130D900836185 /* ProductService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29179CF2295130D900836185 /* ProductService.swift */; };
+		29179CF5295133B100836185 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29179CF4295133B100836185 /* ProductViewModel.swift */; };
+		29179CF7295133F100836185 /* ResultState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29179CF6295133F100836185 /* ResultState.swift */; };
+		29179CFA295135A700836185 /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 29179CF9295135A700836185 /* URLImage */; };
+		29179CFC295135CC00836185 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29179CFB295135CC00836185 /* ProductView.swift */; };
+		29179CFE29514B0E00836185 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29179CFD29514B0E00836185 /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,14 @@
 		29179CCD29508A8E00836185 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		29179CCF29508A8F00836185 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29179CD229508A8F00836185 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		29179CEC29512EB400836185 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		29179CEE29512F9C00836185 /* ProductEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEndpoint.swift; sourceTree = "<group>"; };
+		29179CF02951305700836185 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		29179CF2295130D900836185 /* ProductService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductService.swift; sourceTree = "<group>"; };
+		29179CF4295133B100836185 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		29179CF6295133F100836185 /* ResultState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultState.swift; sourceTree = "<group>"; };
+		29179CFB295135CC00836185 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		29179CFD29514B0E00836185 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29179CFA295135A700836185 /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +69,14 @@
 		29179CCA29508A8E00836185 /* SwisftUI Networking MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				29179CE929508BB100836185 /* Model */,
+				29179CE529508B6A00836185 /* View */,
+				29179CE629508B9200836185 /* ViewModel */,
+				29179CE229508B2500836185 /* Endpoint */,
+				29179CDF29508B0700836185 /* Error */,
+				29179CDC29508AEB00836185 /* Service */,
+				29179CD929508AC100836185 /* Status */,
 				29179CCB29508A8E00836185 /* SwisftUI_Networking_MVVMApp.swift */,
-				29179CCD29508A8E00836185 /* ContentView.swift */,
 				29179CCF29508A8F00836185 /* Assets.xcassets */,
 				29179CD129508A8F00836185 /* Preview Content */,
 			);
@@ -65,6 +89,64 @@
 				29179CD229508A8F00836185 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		29179CD929508AC100836185 /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				29179CF6295133F100836185 /* ResultState.swift */,
+			);
+			path = Status;
+			sourceTree = "<group>";
+		};
+		29179CDC29508AEB00836185 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				29179CF2295130D900836185 /* ProductService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		29179CDF29508B0700836185 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				29179CF02951305700836185 /* APIError.swift */,
+				29179CFD29514B0E00836185 /* ErrorView.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		29179CE229508B2500836185 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				29179CEE29512F9C00836185 /* ProductEndpoint.swift */,
+			);
+			path = Endpoint;
+			sourceTree = "<group>";
+		};
+		29179CE529508B6A00836185 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				29179CCD29508A8E00836185 /* ContentView.swift */,
+				29179CFB295135CC00836185 /* ProductView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		29179CE629508B9200836185 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				29179CF4295133B100836185 /* ProductViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		29179CE929508BB100836185 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				29179CEC29512EB400836185 /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +165,9 @@
 			dependencies = (
 			);
 			name = "SwisftUI Networking MVVM";
+			packageProductDependencies = (
+				29179CF9295135A700836185 /* URLImage */,
+			);
 			productName = "SwisftUI Networking MVVM";
 			productReference = 29179CC829508A8E00836185 /* SwisftUI Networking MVVM.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +196,9 @@
 				Base,
 			);
 			mainGroup = 29179CBF29508A8E00836185;
+			packageReferences = (
+				29179CF8295135A700836185 /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = 29179CC929508A8E00836185 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +225,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29179CF5295133B100836185 /* ProductViewModel.swift in Sources */,
+				29179CFC295135CC00836185 /* ProductView.swift in Sources */,
+				29179CED29512EB400836185 /* Model.swift in Sources */,
 				29179CCE29508A8E00836185 /* ContentView.swift in Sources */,
 				29179CCC29508A8E00836185 /* SwisftUI_Networking_MVVMApp.swift in Sources */,
+				29179CFE29514B0E00836185 /* ErrorView.swift in Sources */,
+				29179CF7295133F100836185 /* ResultState.swift in Sources */,
+				29179CF12951305700836185 /* APIError.swift in Sources */,
+				29179CEF29512F9C00836185 /* ProductEndpoint.swift in Sources */,
+				29179CF3295130D900836185 /* ProductService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +435,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		29179CF8295135A700836185 /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		29179CF9295135A700836185 /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29179CF8295135A700836185 /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 29179CC029508A8E00836185 /* Project object */;
 }
